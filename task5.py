@@ -7,12 +7,6 @@ def get_data():
 def get_turndata():
     return pd.read_csv("1.csv").drop(columns="Unnamed: 0")
 
-'''df = get_data()
-#явка
-strs = df.values.tolist()
-for str in strs:
-        str.append((str[7]+str[8])/str[2])'''
-
 #явка (сортировка по убыванию)
 def turnout():
     df = get_data()
@@ -108,6 +102,7 @@ def uik_number():
     for i in range(len(arr_n)):
         print(arr_n[i], arr_ch[i], '\n')
 
+#6
 def depend():
     df = get_data()
     strs = df.values.tolist()
